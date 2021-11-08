@@ -7,137 +7,156 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald&display=swap" rel="stylesheet"> 
 	<link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="/fontawesome/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,300;1,400;1,700&display=swap" rel="stylesheet">
     
     <title>Youtube</title>
 
 </head>
 <body>
-    <div class="contenedor active" id="contenedor">
+    <header class="header">
+        <div class="contenedor-logo">
+            <button class="boton-menu" id="botonmenu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <a href="#" class="logo">
+                <i class="fas fa-play"></i>
+                YouTube
+            </a>
+        </div>
 
-        <header class="header">
-            <div class="contenedor-logo">
-                <button class="boton-menu" id="botonmenu">
-                    <i class="fas fa-bars"></i>
-                </button>
-                <a href="#" class="logo">
-                    <i class="fas fa-play">
-                        <span>Youtube</span>
-                    </i>
-                </a>
-            </div>
+        <div class="barra-busqueda">
+            <input type="text" placeholder="Buscar">
+            <button type="submit" class="search">
+                <i class="fas fa-search"></i>
+            </button>
+            <button class="micro">
+                <i class="fa fa-microphone"></i>
+            </button>
+        </div>
 
-            <div class="barra-busqueda">
-                <input type="text" placeholder="Buscar">
-                <button type="submit">
-                    <i class="fas fa-search"></i>
-                </button>
-            </div>
+        <div class="botones-header">
+            <button>
+                <i class="fas fa-upload"></i>
+            </button>
+            <button>
+                <i class="fas fa-th"></i>
+            </button>
+            <button>
+                <i class="fas fa-bell"></i>
+            </button>
+            <a href="#" class="avatar">
+                <img src="/img/" alt="">
+            </a>
+        </div>
 
-            <div class="botones-header">
-                <button>
-                    <i class="fas fa-upload"></i>
-                </button>
-                <button>
-                    <i class="fas fa-th"></i>
-                </button>
-                <button>
-                    <i class="fas fa-bell"></i>
-                </button>
-                <a href="#" class="avatar">
-                    <img src="/img/" alt="">
-                </a>
-            </div>
+    </header>
 
-        </header>
+    <nav class="sidebar">
+        <a href="#" class="active"><i class="fas fa-home"></i>Principal</a>
+        <a href="#"><i class="fas fa-compass"></i>Explorar</a>
+        <a href="#"><i class="fas fa-star"></i>Suscripciones</a>
+        <a href="#"><i class="fas fa-tv"></i>Originals</a>
+        <a href="#"><i class="fas fa-music"></i>YouTube Music</a>
 
-        <nav class="sidebar">
+        <hr>
 
-            <div class="contenedor-logo">
-                <button class="boton-menu" id="botonmenu">
-                    <i class="fas fa-bars"></i>
-                </button>
-                <a href="#" class="logo">
-                    <i class="fas fa-play">
-                        <span>Youtube</span>
-                    </i>
-                </a>
-            </div>
+        <a href="#"><i class="fas fa-book"></i>Biblioteca</a>
+        <a href="#"><i class="fas fa-history"></i>Historial</a>
+        <a href="#"><i class="fas fa-video"></i>Tus videos</a>
+        <a href="#"><i class="fas fa-stopwatch"></i>Ver más tarde</a>
+        <a href="#"><i class="fas fa-download"></i>Descargas</a>
+        <a href="#"><i class="fas fa-angle-down"></i>Mostrar más</a>
 
-            <a href="#" class="active"><i class="fas fa-home"></i>Principal</a>
-			<a href="#"><i class="fas fa-compass"></i>Explorar</a>
-			<a href="#"><i class="fas fa-star"></i>Suscripciones</a>
-            <a href="#"><i class="fas fa-tv"></i>Originals</a>
-			<a href="#"><i class="fas fa-music"></i>YouTube Music</a>
+        <hr>
 
-			<hr>
+        <label>Suscripciones</label>
 
-			<a href="#"><i class="fas fa-book"></i>Biblioteca</a>
-			<a href="#"><i class="fas fa-history"></i>Historial</a>
-			<a href="#"><i class="fas fa-video"></i>Tus videos</a>
-			<a href="#"><i class="fas fa-stopwatch"></i>Ver más tarde</a>
-			<a href="#"><i class="fas fa-download"></i>Descargas</a>
-			<a href="#"><i class="fas fa-angle-down"></i>Mostrar más</a>
+        <a href="#"><i class="fas fa-circle"></i></a>
+        <a href="#"><i class="fas fa-circle"></i></a>
+        <a href="#"><i class="fas fa-circle"></i></a>
 
-			<hr>
+        <hr>
 
-            <label>Suscripciones</label>
+        <label>Más de Youtube</label>
 
-            <a href="#"><i class="fas fa-circle"></i></a>
-			<a href="#"><i class="fas fa-circle"></i></a>
-			<a href="#"><i class="fas fa-circle"></i></a>
+        <a href="#"><i class="fas fa-video-camera"></i>Películas</a>
+        <a href="#"><i class="fas fa-gamepad"></i>Videojuegos</a>
+        <a href="#"><i class="fas fa-life-ring"></i>En vivo</a>
+        <a href="#"><i class="fas fa-chalkboard-teacher"></i>Aprendizaje</a>
+        <a href="#"><i class="fas fa-fantasy-flight-games"></i>Deportes</a>
 
-            <hr>
+        <hr>
 
-            <label>Más de Youtube</label>
+        <a href="#"><i class="fas fa-fantasy-flight-games"></i>Configuracion</a>
+        <a href="#"><i class="fas fa-fantasy-flight-games"></i>Historial de denuncias</a>
+        <a href="#"><i class="fas fa-hands-helping"></i>Ayuda</a>
+        <a href="#"><i class="fas fa-comments"></i>Enviar comentarios</a>
 
-			<a href="#"><i class="fas fa-video-camera">Películas</i></a>
-			<a href="#"><i class="fas fa-gamepad">Videojuegos</i></a>
-			<a href="#"><i class="fas fa-life-ring">En vivo</i></a>
-			<a href="#"><i class="fas fa-chalkboard-teacher">Aprendizaje</i></a>
-			<a href="#"><i class="fas fa-fantasy-flight-games">Deportes</i></a>
-
-            <hr>
-
-			<a href="#"><i class="fas fa-fantasy-flight-games">Configuracion</i></a>
-			<a href="#"><i class="fas fa-fantasy-flight-games">Historial de denuncias</i></a>
-			<a href="#"><i class="fas fa-hands-helping">Ayuda</i></a>
-			<a href="#"><i class="fas fa-comments">Enviar comentarios</i></a>
-
-            <hr>
-
-            <a href="#">Acerca de Presa</a>
-			<a href="#">Derechos de autor</a>
-			<a href="#">Comunicarte con nosotros</a>
-			<a href="#">Creadores</a>
-			<a href="#">Anunciar</a>
+        <hr>
+        <div class="sidebar-footer">
+            <a href="#">Acerca de Prensa</a>
+            <a href="#">Derechos de autor</a>
+            <a href="#">Comunicarte con nosotros</a>
+            <a href="#">Creadores</a>
+            <a href="#">Anunciar</a>
             <br>
             <a href="#">Condiciones</a>
-			<a href="#">Privacidad</a>
-			<a href="#">Políticas y Seguridad</a>
-			<a href="#">Cómo funciona YouTube</a>
-			<a href="#">Prueba funciones nuevas</a>
+            <a href="#">Privacidad</a>
+            <a href="#">Políticas y Seguridad</a>
+            <a href="#">Cómo funciona YouTube</a>
+            <a href="#">Prueba funciones nuevas</a>                
+        </div>            
 
-        </nav>
+    </nav> 
 
-        <main class="main">
-			<h3 class="titulo">Videos Recomendados</h3>
-			<div class="grid-videos">
-				<a href="#" class="video"><img src="https://via.placeholder.com/500x281?text=Placeholder" alt=""></a>
-				<a href="#" class="video"><img src="https://via.placeholder.com/500x281?text=Placeholder" alt=""></a>
-				<a href="#" class="video"><img src="https://via.placeholder.com/500x281?text=Placeholder" alt=""></a>
-				<a href="#" class="video"><img src="https://via.placeholder.com/500x281?text=Placeholder" alt=""></a>
-				<a href="#" class="video"><img src="https://via.placeholder.com/500x281?text=Placeholder" alt=""></a>
-				<a href="#" class="video"><img src="https://via.placeholder.com/500x281?text=Placeholder" alt=""></a>
-				<a href="#" class="video"><img src="https://via.placeholder.com/500x281?text=Placeholder" alt=""></a>
-				<a href="#" class="video"><img src="https://via.placeholder.com/500x281?text=Placeholder" alt=""></a>
-				<a href="#" class="video"><img src="https://via.placeholder.com/500x281?text=Placeholder" alt=""></a>
-				<a href="#" class="video"><img src="https://via.placeholder.com/500x281?text=Placeholder" alt=""></a>
-				<a href="#" class="video"><img src="https://via.placeholder.com/500x281?text=Placeholder" alt=""></a>
-				<a href="#" class="video"><img src="https://via.placeholder.com/500x281?text=Placeholder" alt=""></a>
-			</div>
-		</main>
-
-    </div>
+    <main class="main">
+        <div class="carrousel">
+            <button>Todos</button>
+            <button>Mixes</button>
+            <button>Música</button>
+            <button>Programación</button>
+            <button>Ciencia Ficción</button>
+            <button>Guitarra</button>
+            <button>League of Legends</button>
+            <button>Call of Duty</button>
+            <button>Piano</button>
+            <button>Canto</button>
+            <button>Suspenso</button>
+            <button>Trailers</button>
+            <button>Marvel Comics</button>
+            <button>DC Comics</button>
+        </div>
+        
+        <h3 class="titulo">Videos Recomendados</h3>
+        <div class="grid-videos">
+            <a href="#" class="video"><img src="https://via.placeholder.com/500x281?text=Placeholder" alt=""></a>
+            <a href="#" class="video"><img src="https://via.placeholder.com/500x281?text=Placeholder" alt=""></a>
+            <a href="#" class="video"><img src="https://via.placeholder.com/500x281?text=Placeholder" alt=""></a>
+            <a href="#" class="video"><img src="https://via.placeholder.com/500x281?text=Placeholder" alt=""></a>
+            <a href="#" class="video"><img src="https://via.placeholder.com/500x281?text=Placeholder" alt=""></a>
+            <a href="#" class="video"><img src="https://via.placeholder.com/500x281?text=Placeholder" alt=""></a>
+            <a href="#" class="video"><img src="https://via.placeholder.com/500x281?text=Placeholder" alt=""></a>
+            <a href="#" class="video"><img src="https://via.placeholder.com/500x281?text=Placeholder" alt=""></a>
+            <a href="#" class="video"><img src="https://via.placeholder.com/500x281?text=Placeholder" alt=""></a>
+            <a href="#" class="video"><img src="https://via.placeholder.com/500x281?text=Placeholder" alt=""></a>
+            <a href="#" class="video"><img src="https://via.placeholder.com/500x281?text=Placeholder" alt=""></a>
+            <a href="#" class="video"><img src="https://via.placeholder.com/500x281?text=Placeholder" alt=""></a>
+            <a href="#" class="video"><img src="https://via.placeholder.com/500x281?text=Placeholder" alt=""></a>
+            <a href="#" class="video"><img src="https://via.placeholder.com/500x281?text=Placeholder" alt=""></a>
+            <a href="#" class="video"><img src="https://via.placeholder.com/500x281?text=Placeholder" alt=""></a>
+            <a href="#" class="video"><img src="https://via.placeholder.com/500x281?text=Placeholder" alt=""></a>
+            <a href="#" class="video"><img src="https://via.placeholder.com/500x281?text=Placeholder" alt=""></a>
+            <a href="#" class="video"><img src="https://via.placeholder.com/500x281?text=Placeholder" alt=""></a>
+            <a href="#" class="video"><img src="https://via.placeholder.com/500x281?text=Placeholder" alt=""></a>
+            <a href="#" class="video"><img src="https://via.placeholder.com/500x281?text=Placeholder" alt=""></a>
+            <a href="#" class="video"><img src="https://via.placeholder.com/500x281?text=Placeholder" alt=""></a>
+            <a href="#" class="video"><img src="https://via.placeholder.com/500x281?text=Placeholder" alt=""></a>
+            <a href="#" class="video"><img src="https://via.placeholder.com/500x281?text=Placeholder" alt=""></a>
+            <a href="#" class="video"><img src="https://via.placeholder.com/500x281?text=Placeholder" alt=""></a>
+        </div>
+    </main>
     
     
     <script src="js/master.js"></script>
