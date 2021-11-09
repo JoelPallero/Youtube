@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,400;1,300;1,400;1,700&display=swap');
+
 /*Reseteamos todo el html*/
 * {
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
     text-decoration: none;
-    }
+}
 
 body{
 	font-family: 'Roboto', sans-serif;
@@ -27,41 +29,51 @@ body{
 
 .contenedor-logo{
 	display: flex;
-	align-items: center;	
+	align-items: center;
+	justify-content: space-around;
 }
 
 .contenedor-logo .boton-menu{
 	border: none;
-	padding: 20px;
 	background: none;
 	cursor: pointer;
 	font-size: 20px;
 	border-radius: 100px;
-	width: 60px;
-	height: 60px;
+	width: 40px;
+	height: 40px;
+	align-content: center;
 	color: rgb(177, 177, 177);
+	margin: 0 15px;
 }
 
-.contenedor-logo .boton-menu:hover{
+
+/*  Creamos una clase para utilizar con js para el click de los botones, 
+	ya que los botones del header cambian de color solo al hacerle click  */
+
+.btn-press{
 	background-color: #444;
 }
 
-.contenedor-logo .logo .fas{
-	background-color: #ff0000;
-	padding: 7px 12px;
-	border-radius: 6px;
-	font-size: 14px;
-	color: white;
-	position: relative;
-	top: -3px;
-	margin-right: 4px;
+/*---------------*/
+
+.contenedor-logo img{
+	width: 30px;
+	height: 28px;
+	border-radius: 1px;
+	border: none;
+	background: none;
+	margin-top: -3px;
+	cursor: pointer;
 }
 
 .contenedor-logo .logo{
-	font-family: 'Bebas Neue', 'Roboto';
+	font-family: 'Bebas Neue';
 	color: white;
 	font-weight: 400;
-	font-size: 22px;
+	font-size: 24px;
+	margin: 0 3px;
+	padding: 25px 0;
+	cursor: pointer;
 }
 
 .header .barra-busqueda{
@@ -71,28 +83,31 @@ body{
 .header .barra-busqueda input{
 	min-width: 100%;
 	padding: 0 15px;
-	height: 38px;
-	width: 340px;
+	height: 40px;
+	width: 470px;
 	line-height: 35px;
 	border-radius: 2px;
-	border: 2px solid rgb(46, 45, 45);
+	border: 1px solid #333;
 	background-color: #111;
-	color: white;
+	color: rgb(255, 255, 255);
 	font-size: 15px;
-	font-weight: 700;
+	font-weight: 500;
+	font-family: 'Roboto';
 }
 
 .header .barra-busqueda .search{
-	height: 35px;
+	height: 38px;
 	padding: 0 25px;
 	background-color: #333;
 	border: none;
-	color: white;
+	color: whitesmoke;
+	align-self: center;
+	border-radius: 2px;
 }
 
 .header .barra-busqueda .micro{
-	height: 35px;
-	width: 35px;
+	height: 40px;
+	width: 40px;
 	border-radius: 100px;
 	padding: 15px;
 	margin-left: 10px;
@@ -101,5 +116,33 @@ body{
 	align-items: center;
 	background-color: rgb(25, 25, 25);
 	border: none;
-	color: white;
+	color: whitesmoke;
 }
+
+.botones-header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.botones-header button{
+	height: 30px;
+	width: 30px;
+	margin: 0 10px;
+	background: none;
+	border: none;
+	color: white;
+	align-self: center;
+	border-radius: 100px;
+}
+
+.botones-header .avatar img{
+	width: 35px;
+	height: 35px;
+	border-radius: 100px;
+	border: none;
+	background: none;
+	align-content: center;
+	margin: 18px 20px 10px;
+}
+
